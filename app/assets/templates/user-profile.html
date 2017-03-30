@@ -1,0 +1,51 @@
+<div class="background-container">
+    <div class="shapes">
+        <div class="one">
+
+            <a ui-sref="BlueParent.update"><span>Update Mood</span></a>
+
+        </div>
+        <div class="two">
+
+            <a ui-sref="BlueParent.counselors"><span>Local Health Centers</span></a>
+
+        </div>
+        <div class="three">
+
+            <a ui-sref="BlueParent.hotline"><span>Crisis helplines</span></a>
+
+        </div>
+        <div class="four">
+
+            <a ui-sref="BlueParent.todo"><span>get motivated</span></a>
+        </div>
+    </div>
+
+</div>
+
+<div class="sms-container">
+    <a class="desktop-sms" ng-click="show=true" ng-hide="show">SMS <i class="fa fa-mobile" aria-hidden="true"></i></a>
+    <div class="sms-popup" ng-show="show">
+        <div class="receiving-message" ng-show="optedIn()"><span>You are currently receiving <span class="reminder">{{currentFrequency}}</span> messages</span></div>
+        <form name="smsForm" ng-hide="optedIn()" class="smsForm" ng-submit="submitSms()">
+                <div class="opt-in"><span>Opt in to recieve SMS messages<br/></span></div>
+                <label for="phonenum">Phone Number (10 digits) <i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                <div><input ng-model="num" name="number" ng-click="submitCarriers()" id="phonenum" type="tel" pattern="^(\D*\d){10}\D*$" placeholder="Number (required)"required></div>
+
+                <label class="provider" for="provider">Carrier <i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                <select name="phonecarrier" ng-change="currentCarrier" ng-model="smsCarrier" ng-options="carrier[1] as carrier[0] for carrier in phoneCarriers" id="provider" required>
+                    <option value=''>Carrier (required) </option>
+                </select><br/>
+
+                <div class="frequency"><label for="frequency">How Often Would You Like to Recieve SMS? <i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                <select name="frequency" ng-change="currentFrequency" ng-model="smsFrequency" id="frequency" required>
+                    <option value=''>Frequency (required) </option>
+                    <option value='Daily'>Daily</option>
+                    <option value='Weekly'>Weekly</option>
+                    <option value='Reminder'>On 3 Day Abscence</option>
+                </select></div>
+            <button ng-hide="optedIn()" ng-class="{'disableButton': smsFormValid()}" type="submit" ng-disabled="smsFormValid()">Opt In</button>
+        </form>
+        <button ng-show="optedIn()" ng-click="deleteSms()">Opt Out</button>
+        <a ng-click="show=false">close <i class="fa fa-times" aria-hidden="true"></i></a></div>
+</div>

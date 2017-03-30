@@ -1,0 +1,52 @@
+@mixin bp($point) {
+     @if $point == mobile{
+        @media screen and (min-width: 320px) {
+             @content;
+        }
+    }
+    @if $point == small {
+         @media screen and (min-width: 661px){
+            @content;
+        }
+    }
+    @if $point == medium {
+         @media screen and (min-width: 670px){
+            @content;
+        }
+    }
+    @else if $point == large {
+         @media screen and (min-width: 820px){
+            @content;
+        }
+    }
+    @else if $point == full {
+         @media screen and (min-width: 1220px){
+            @content;
+        }
+    }
+}
+@mixin vcenter {
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+@mixin gradient($start, $end) {
+    background: $start;
+    background: -webkit-linear-gradient($start, $end);
+    background: -o-linear-gradient($start, $end);
+    background: -moz-linear-gradient($start, $end);
+    background: linear-gradient($start, $end);
+}
+@mixin bg-image {
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@mixin proj-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

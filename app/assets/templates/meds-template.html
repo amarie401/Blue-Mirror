@@ -1,0 +1,62 @@
+<h2 class="calendar-events">Medication Calendar</h2>
+<div class="calbutton-container">
+    <button ng-class="{'disableButton': hasTakenMeds()}" class="button took-meds" ng-disabled="hasTakenMeds()" ng-click="tookMeds()">I took my meds today</button>
+    <button type="button" ng-click="showMeds=true; showEvents=false">View Medications</button>
+    <button type="button" ng-click="showEvents=true; showMeds=false">Create Event</button>
+</div>
+<div class="medication-container" ng-show="showMeds">
+    <div class="medication-wrapper">
+        <h3 class="total-items">Current Medication</h3>
+        <span ng-hide="show">Add current medications</span>
+        <a ng-click="showMeds=false" class="meds-close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        <div class="med-list">
+            <ul class="med-nav">
+                <li ng-repeat="med in medications">
+                    <input class="checkbox" type="checkbox" ng-model="med.done" />
+                    <span class="med-{{med.done}} todo">{{med.name}}</span>
+                    <input style="display: none;" data-id="{{med.id}}"></input>
+                </li>
+            </ul>
+            <form ng-submit="postMeds()">
+                <label class="med-name" for="medication-name">Name</label>
+                <p class="error">{{error}}</p>
+                <input id="medication-name" type="text" Placeholder="Enter Medication" maxlength="20" ng-model="input" />
+                <div class="med-buttons">
+                    <button type="submit" ng-submit "postMeds()"> Add Medication</button>
+                    <button type="button" ng-click="deleteMeds()">Remove Selected</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="calendar-container">
+    <div class="form-container" ng-show="showEvents">
+        <form class="form-horizontal clearfix">
+            <label for="dateFrom" class="col-sm-2 control-label">Date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="dateFrom" ng-model="from" required>
+            </div>
+            <label for="dateTitle" class="col-sm-2 control-label">Event</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="dateTitle" ng-model="title" maxlength="40" placeholder="Title">
+            </div>
+            <button type="submit" class="btn btn-primary pull-right" ng-click="addEvent(); showEvents=false">Submit</button>
+        </form>
+    </div>
+    <div class="well calWell">
+        <div class="row-fluid">
+            <div class="span8">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button class="btn btn-success" ng-class="{active: currentView === 'basicDay'}" ng-click="changeView('basicDay', 'calendar')">Day</button>
+                        <button class="btn btn-success" ng-class="{active: currentView === 'basicWeek'}" ng-click="changeView('basicWeek', 'calendar')">Week</button>
+                        <button class="btn btn-success" ng-class="{active: currentView === 'month'}" ng-click="changeView('month', 'calendar')">Month</button>
+                    </div>
+                </div>
+                <div class="calendar" ng-model="eventSources" calendar="calendar" ui-calendar="uiConfig.calendar">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

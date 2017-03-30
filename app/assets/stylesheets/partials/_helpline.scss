@@ -1,0 +1,65 @@
+.helpline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .phone-service {
+        a {
+            color: $accentBrightRed;
+        }
+    }
+
+    i.fa.fa-circle-o {
+        padding-right: 5px;
+    }
+
+    .helpline-info {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: $border;
+    }
+
+    .helpline-title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-size: 1.5rem;
+            height: 100%;
+        }
+    }
+
+    ul {
+        margin-top: 20px;
+        border-top: $border;
+        width: 75%;
+
+        li {
+            h3 {
+                color: $mainColor;
+                text-align: center;
+                padding-top: 5px;
+            }
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .services-avail {
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                i {
+                    font-size: 1.2rem;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="container-mood">
+    <div class="update-mood-container">
+        <h2 ng-show="!isSubmitted">Update Your Mood</h2>
+        <div ng-show="!isSubmitted" class="select_style">
+            <select ng-change="change()" ng-model="value" ng-options="moodList.indexOf(mood) + 1 as mood.text for mood in moodList" id="mood-selections">
+            <option value=''>-- Select Here -- </option>
+            </select>
+            <span></span>
+        </div>
+        <form ng-show="!isSubmitted" name="explainForm" class="mood-form" ng-submit="postMoods()">
+            <span>{{error}}</span>
+            <input class="button" type="submit" value="Submit">
+        </form>
+        <button ng-show="!isSubmitted" class="customize-link" ui-sref="BlueParent.customize">Customize your moods</button>
+        <div ng-show="isSubmitted" class="mood-updated">
+            <h2>Mood Updated! Do you want to write about it in your <a ui-sref="BlueParent.journal">journal</a>?</h2>
+        </div>
+    </div>
+</div>

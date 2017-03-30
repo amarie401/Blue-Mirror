@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='BlueMirrorApp'>
   <head>
-    <title>BlueMirror</title>
+    <title>Blue Mirror</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body ng-controller="ProfileController">
     <%= yield %>
+    <script>
+      var currentUser = <%= raw current_user.to_json %>
+      var moodList = <%= raw mood_list(current_user) %>
+      var carriers = <%= raw carrier_collection %>
+    </script>
   </body>
 </html>

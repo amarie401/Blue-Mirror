@@ -1,0 +1,199 @@
+@import url( 'https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
+$headerFont: 'Josefin Slab', serif;
+$primaryFont: 'Raleway', sans-serif;
+$mainColor: #399ea7;
+$accentDullRed: #bd7556;
+$accentBrightRed: #df7236;
+$accentTeal: #2e7a81;
+$darkAccentTeal: #35635d;
+$accentCream: #fbfdf2;
+$borderColor: #d6d6d6 #888 #888 #d6d6d6;
+$borderColorRemove: #d6d6d6 $accentBrightRed $accentBrightRed #d6d6d6;
+$border: 0.13rem solid #e7e5dc;
+$placeholder: #c9c5b7;
+$portfolioBorder: 2px solid white;
+$largeBorder: 10px solid $mainColor;
+$radius: 0.3rem;
+$start: $mainColor;
+$end: $mainColor;
+
+body {
+    background: $accentCream;
+}
+
+a,
+i,
+li,
+span {
+    font-family: $primaryFont;
+    color: $darkAccentTeal;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+    display: none !important;
+}
+
+input {
+    outline: none;
+    display: block;
+    margin: 2%;
+    padding: 10px;
+    width: 200px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border: $border;
+    background: white;
+    border-radius: $radius;
+    color: $accentTeal;
+}
+
+ input[type=submit] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+   }
+
+button {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid;
+    color: $accentCream;
+    background: $mainColor;
+    border-color: none;
+    border-radius: $radius;
+
+    &:hover {
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    }
+}
+
+.angular-google-map-container {
+    height: 300px;
+}
+
+.button {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid;
+    color: $accentCream;
+    background: $mainColor;
+    border-color: none;
+    border-radius: $radius;
+
+    &:hover {
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    }
+}
+
+.remove {
+    background: $accentDullRed;
+    color: $accentCream;
+    border-radius: $radius;
+}
+
+.disableButton {
+    opacity: 0.35;
+    background: #eee;
+    color: #444;
+}
+
+.bmirror {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-family: $headerFont;
+    font-size: 3rem;
+}
+
+.line {
+    width: 50%;
+    height: 20px;
+    margin: 0 auto;
+    border-bottom: 2px solid #e7e5dc;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: $headerFont;
+    color: $darkAccentTeal;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: $headerFont;
+    color: $darkAccentTeal;
+}
+
+textarea {
+    color: $darkAccentTeal;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    padding: 1%;
+    outline: none;
+    border: $border;
+    decoration: none;
+    border-radius: $radius;
+}
+
+label {
+    font-family: $primaryFont;
+    color: $darkAccentTeal;
+    font-size: 1rem;
+    padding-bottom: 2px;
+    font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $placeholder;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $placeholder;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $placeholder;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: $placeholder;
+}

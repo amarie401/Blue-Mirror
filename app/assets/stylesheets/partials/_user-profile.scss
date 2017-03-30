@@ -1,0 +1,104 @@
+.shapes {
+    display: flex;
+    padding-top: 15%;
+    @include bp (mobile) {
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @include bp (small) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 520px;
+    }
+
+    div {
+        background: $mainColor;
+        display: flex;
+        margin: 3px;
+        justify-content: center;
+        align-items: center;
+        @include bp (mobile) {
+            width: 150px;
+            height: 160px;
+        }
+        @include bp (small) {
+            margin: 5px;
+            width: 290px;
+            height: 250px;
+        }
+
+        a {
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include bp (mobile) {
+                width: 140px;
+                height: 152px;
+            }
+            @include bp (small) {
+                height: 230px;
+                width: 270px;
+            }
+
+            span {
+                font-family: $headerFont;
+                color: white;
+                text-align: center;
+                @include bp (mobile) {
+                    width: 75%;
+                    font-size: 1.5rem;
+                }
+                @include bp (small) {
+                    width: 60%;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .four,
+    .one {
+        a {
+            @include bp (mobile) {
+                border: 3px solid white;
+                border-top-left-radius: 5.7rem;
+                border-bottom-right-radius: 5.7rem;
+            }
+            border: 15px double white;
+            border-top-left-radius: 9rem;
+            border-bottom-right-radius: 9rem;
+        }
+        @include bp (mobile) {
+            border-top-left-radius: 6rem;
+            border-bottom-right-radius: 6rem;
+        }
+        border-top-left-radius: 9.7rem;
+        border-bottom-right-radius: 9.7rem;
+    }
+
+    .three,
+    .two {
+        a {
+            @include bp (mobile) {
+                border: 3px solid white;
+                border-top-right-radius: 5.7rem;
+                border-bottom-left-radius: 5.7rem;
+            }
+            border: 15px double white;
+            border-top-right-radius: 9rem;
+            border-bottom-left-radius: 9rem;
+        }
+        @include bp (mobile) {
+            border-top-right-radius: 6rem;
+            border-bottom-left-radius: 6rem;
+        }
+        border-top-right-radius: 9.7rem;
+        border-bottom-left-radius: 9.7rem;
+    }
+}

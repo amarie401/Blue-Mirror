@@ -1,0 +1,16 @@
+.mood-updated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        @include bp(mobile) {
+            display: inline;
+        }
+    }
+}

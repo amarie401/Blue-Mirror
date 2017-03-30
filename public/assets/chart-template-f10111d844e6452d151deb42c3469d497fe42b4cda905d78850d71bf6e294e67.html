@@ -1,0 +1,12 @@
+<div class="chart-headline">
+    <h2>Your Mood History</h2>
+</div>
+<div class="day-param">
+    <a id='oneweek' class="button" ng-click="oneWeek()">One Week</a>
+    <a id='onemonth' class="button" ng-click="oneMonth()">One Month</a>
+    <a id='sixmonth' class="button" ng-click="sixMonth()">Six Months</a>
+</div>
+<div class="chart-container">
+    <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options">
+            </canvas>
+</div>

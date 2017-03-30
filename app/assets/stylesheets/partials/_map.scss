@@ -1,0 +1,121 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.map-results ul li {
+    font-size: 15px;
+    line-height: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: $border;
+    padding-bottom: 13px;
+
+    .list-colored {
+        color: $accentBrightRed;
+    }
+
+    a.result-website {
+        text-decoration: underline;
+        color: $accentTeal;
+        word-wrap: break-word;
+    }
+}
+
+.result-rating {
+    display: table;
+}
+
+.result-name {
+    a {
+        font-size: 22px;
+        font-family: $headerFont;
+        color: $mainColor;
+    }
+}
+
+.map-container {
+    @include bp(mobile) {
+        width: 100%;
+        height: 150px;
+        margin-top: 30px;
+        padding-bottom: 430px;
+    }
+    @include bp(small) {
+        width: 600px;
+        height: 300px;
+        margin-top: 30px;
+        margin-bottom: 137px;
+        padding-bottom: 270px;
+    }
+}
+
+.map-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    ul {
+        border-top: $border;
+        padding-top: 13px;
+        @include bp(mobile) {
+            width: 320px;
+        }
+        @include bp(small) {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 1.8em;
+    }
+}
+
+.list-styled {
+    .list-colored a {
+        color: $accentBrightRed;
+    }
+
+    .list-underlined a {
+        text-decoration: underline;
+        color: $accentTeal;
+    }
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 15px solid $mainColor;
+    border-top-color: $darkAccentTeal;
+    animation: spin 1s infinite linear;
+    margin: -40px 0 0 -40px;
+    @include bp(mobile) {
+        left: 55%;
+    }
+    @include bp(small) {
+        left: 60%;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

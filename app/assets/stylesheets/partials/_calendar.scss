@@ -1,0 +1,263 @@
+.calbutton-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    @include bp (mobile) {
+        flex-direction: column;
+        align-items: center;
+    };
+    @include bp (small) {
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    };
+}
+
+.calendar {
+    @include bp(mobile) {
+        height: 350px;
+    }
+    @include bp(small) {
+        height: 700px;
+    }
+}
+
+.calendar-events {
+    text-align: center;
+    @include bp(mobile) {
+        padding-bottom: 20px;
+    }
+    @include bp(small) {
+        padding-bottom: 0;
+    }
+}
+
+.span8 {
+    @include bp(mobile) {
+        width: 322px;
+    }
+    @include bp(small) {
+        width: 800px;
+    }
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    form {
+        margin: 0 auto;
+
+        input[type=date] {
+            font-family: $primaryFont;
+            text-transform: uppercase;
+        }
+
+        input[type=text] {
+            font-family: $primaryFont;
+            width: 200px;
+            padding: 5.7px;
+        }
+        @include bp(mobile) {
+            label {
+                font-size: 18px;
+            }
+
+            .col-sm-10 {
+                padding-bottom: 10px;
+            }
+        }
+        @include bp(small) {
+            display: flex;
+            align-items: baseline;
+
+            .pull-right {
+                width: 200px;
+                height: 38px;
+            }
+
+            label {
+                margin-right: 5px;
+                font-size: 20px;
+                border: none;
+            }
+
+            button.btn.btn-primary.pull-right {
+                font-size: 13px;
+            }
+
+            .col-sm-10 {
+                margin-right: 20px;
+
+                button[type=submit] {
+                    font-size: 0;
+                    padding: 11px;
+                }
+
+                input {
+                    padding: 5px;
+                    width: initial;
+                }
+            }
+        }
+    }
+}
+
+div.fc-toolbar {
+    @include bp(mobile) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include bp(small) {
+        text-align: center;
+        margin-bottom: 1em;
+        display: block;
+    }
+}
+
+div.fc-left {
+    @include bp(mobile) {
+        float: right;
+        width: 100%;
+        display: inline-grid;
+    }
+    @include bp(small) {
+        float: none;
+        width: inherit;
+        display: inline;
+    }
+}
+
+div.fc-right {
+    @include bp(mobile) {
+        width: 100%;
+    }
+    @include bp(small) {
+        display: block;
+        width: inherit;
+    }
+
+    button.fc-today-button {
+        @include bp(mobile) {
+            display: none;
+        }
+        @include bp(small) {
+            display: block;
+        }
+    }
+}
+
+div.fc-button-group {
+    @include bp(mobile) {
+        display: flex;
+        width: 100%;
+    }
+    @include bp(small) {
+        width: inherit;
+    }
+}
+
+/*** Calendar + FullCalendar Overrides ***/
+
+.fc-day-grid-event .fc-content {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+.fc-event {
+    border: 1px solid $darkAccentTeal !important;
+    background-color: $accentCream !important;
+}
+
+.calXBtn {
+    float: right;
+    margin-top: -5px;
+    margin-right: -5px;
+}
+
+.calWell {
+    background: white;
+    @include bp(mobile) {
+        margin: 40px;
+        float: none;
+        height: 372px;
+    }
+    @include bp(small) {
+        float: left;
+        margin: 10px;
+    }
+}
+
+tr, td {
+    background: white;
+}
+
+.fc-unthemed .fc-today {
+    background: white !important;
+}
+
+.fc-view, .fc-view > table {
+    z-index: 0 !important;
+}
+
+.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+    border-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+.fc-event.openSesame {
+    background-color: rgb(229, 229, 11);
+    color: black;
+}
+
+.fc-event.customFeed {
+    background-color: rgb(132, 222, 175);
+    color: black;
+}
+
+.calTools {
+    margin-bottom: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        width: 164px;
+    }
+}
+
+.calendar .fc-toolbar .fc-left {
+    float: none;
+    @include bp(mobile) {
+        display: inline-grid;
+    }
+    @include bp(small) {
+        display: inline-block;
+    }
+}
+
+div button.fc-today-button {
+    width: 161px !important;
+    margin-right: 5px !important;
+}
+
+div.fc .fc-toolbar > * > * {
+    margin-left: 0 !important;
+}
+
+div button.fc-prev-button {
+    width: 161px !important;
+    margin-right: 5px !important;
+}
+
+div.fc .fc-button-group > * {
+    margin: 0;
+}
+
+div button.fc-next-button {
+    margin-right: 2px !important;
+    width: 158px;
+}

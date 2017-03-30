@@ -1,0 +1,120 @@
+.sms-container {
+    @include bp(mobile) {
+        position: fixed;
+        bottom: 65px;
+        right: 20px;
+    }
+    @include bp(small) {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+    }
+}
+
+.sms-container {
+    @include bp(mobile) {
+        visibility: hidden;
+    }
+    @include bp(small) {
+        visibility: visible;
+    }
+}
+
+.mobile-sms {
+    @include bp(mobile) {
+        visibility: visible;
+    }
+    @include bp(small) {
+        visibility: hidden;
+    }
+}
+
+.sms-popup {
+    padding: 5px;
+    border-radius: 0.3rem;
+    background: rgba(255, 255, 255, 0.77);
+    border: 0.13rem solid #e7e5dc;
+
+    form div {
+        padding-bottom: 18px;
+    }
+    @include bp(mobile) {
+        width: 319px;
+    }
+    @include bp(small) {
+        width: 368px;
+    }
+}
+
+a.text-opt {
+    position: fixed;
+    right: 15px;
+    bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include bp (mobile) {
+        font-size: 1.5rem;
+    }
+
+    i {
+        padding-left: 11px;
+    }
+}
+
+.opt-in {
+    text-align: center;
+}
+// .opt-in span {
+//     @include bp(mobile) {
+//         display: block;
+// }
+//     @include bp(small) {
+//         display: inline;
+//     }
+// }
+
+.smsForm button {
+    padding: 6px;
+}
+
+.smsForm label {
+    font-size: 15px;
+}
+
+form.smsForm label i {
+    color: #bc2c2c;
+    font-size: 8px;
+}
+
+input#phonenum {
+    margin: 0;
+    padding: 3px;
+}
+
+.smsForm div span {
+    font-family: $headerFont;
+    font-size: 1.5em;
+}
+
+.frequency {
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
+.provider {
+    display: block;
+}
+
+.receiving-message {
+    padding-bottom: 13px;
+    font-family: $headerFont;
+
+    span.reminder {
+        color: $accentDullRed;
+    }
+}
+
+a.desktop-sms {
+    font-size: 1.5rem;
+}

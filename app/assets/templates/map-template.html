@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="loading" ng-show="!map.control"></div>
+    <h2 ng-show="map.control">Local Health Centers</h2>
+    <div class="map-container">
+        <ui-gmap-google-map ng-if="map.center" id="map-canvas" center="map.center" zoom="map.zoom" draggable="true" options="map.options" zoom-to-include-markers="true" control="map.control" event="map.event">
+            <ui-gmap-marker ng-repeat="m in map.markers" idkey='m.id' coords="m" click="onMarkerClicked(m)">
+                <ui-gmap-window templateUrl="map.templateUrl" templateParameter="map.templateParameter">
+                </ui-gmap-window>
+            </ui-gmap-marker>
+        </ui-gmap-google-map>
+    </div>
+    <div ng-show="map.control" class="map-results">
+        <div class="line"></div>
+        <h2>Contact Information</h2>
+        <ul>
+            <li ng-repeat="result in newArr"><i class="fa fa-circle-o" aria-hidden="true"></i>
+                <span class="result-name"><a ng-href="{{result.website}}">{{result.name}}</a><br/></span>
+                <span class="result-rating">{{checkRating(result.rating)}}</span>
+                <span>{{result.formatted_address}} <br/></span>
+                <span><a class="list-colored" ng-href="tel:{{result.formatted_phone_number}}">{{result.formatted_phone_number}} <br/></a></span>
+                <!-- <span><a class="result-website list-underlined" ng-href="{{result.website}}">{{result.website}}</a></span> -->
+                <!-- <span>{{checkRating(result.rating)}}</span> -->
+            </li>
+        </ul>
+    </div>
+</div>

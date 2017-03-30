@@ -1,0 +1,112 @@
+.error {
+    font-family: $primaryFont;
+}
+
+.todo-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        padding-bottom: 10px;
+    }
+
+    a {
+        padding-bottom: 10px;
+    }
+}
+
+.todo-list ul {
+    width: 300px;
+    display: inline-block;
+    color: #97a0af;
+    margin-top: 10px;
+
+    li {
+        display: flex;
+        margin-bottom: 5px;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+
+        .checkbox {
+            width: 7%
+        }
+
+        span {
+            width: 80%;
+        }
+    }
+}
+
+span.med-true {
+    text-decoration: line-through;
+}
+
+.todo-list input[type="text"] {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.todo-list {
+    form {
+        input {
+            width: 287px;
+        }
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-todos {
+    padding: 5px;
+    width: 300px;
+    border-radius: $radius;
+    background: rgba($accentCream,.8);
+    border: $border;
+
+    ul li {
+        padding-bottom: 10px;
+    }
+}
+
+.cite {
+    padding-bottom: 10px;
+
+    span {
+        font-size: 11px;
+    }
+    a {
+        color: $accentBrightRed;
+    }
+}
+
+.feat-todo div i {
+    font-size: 10px;
+    padding-right: 8px;
+}
+
+.feat-todo div {
+    display: flex;
+    align-items: baseline;
+}
+
+span.todo-true {
+    text-decoration: line-through;
+}
+
+.todo-list {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

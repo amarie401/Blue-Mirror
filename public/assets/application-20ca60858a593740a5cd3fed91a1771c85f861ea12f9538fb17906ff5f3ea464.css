@@ -1,0 +1,3948 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway");
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 10, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 99, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 113, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 117, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 122, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 127, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+/* line 135, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 20, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+body {
+  background: #fbfdf2;
+}
+
+/* line 24, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+a,
+i,
+li,
+span {
+  font-family: "Raleway", sans-serif;
+  color: #35635d;
+}
+
+/* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+a,
+button {
+  cursor: pointer;
+}
+
+/* line 37, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important;
+}
+
+/* line 46, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+input {
+  outline: none;
+  display: block;
+  margin: 2%;
+  padding: 10px;
+  width: 200px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border: 0.13rem solid #e7e5dc;
+  background: white;
+  border-radius: 0.3rem;
+  color: #2e7a81;
+}
+
+/* line 60, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 65, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+button {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: block;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid;
+  color: #fbfdf2;
+  background: #399ea7;
+  border-color: none;
+  border-radius: 0.3rem;
+}
+/* line 81, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+button:hover {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 86, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.angular-google-map-container {
+  height: 300px;
+}
+
+/* line 90, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.button {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: block;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid;
+  color: #fbfdf2;
+  background: #399ea7;
+  border-color: none;
+  border-radius: 0.3rem;
+}
+/* line 106, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.button:hover {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 111, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.remove {
+  background: #bd7556;
+  color: #fbfdf2;
+  border-radius: 0.3rem;
+}
+
+/* line 117, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.disableButton {
+  opacity: 0.35;
+  background: #eee;
+  color: #444;
+}
+
+/* line 123, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.bmirror {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 128, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 3rem;
+}
+
+/* line 133, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+.line {
+  width: 50%;
+  height: 20px;
+  margin: 0 auto;
+  border-bottom: 2px solid #e7e5dc;
+  margin-top: 40px;
+}
+
+/* line 141, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+h2 {
+  font-size: 2em;
+  font-family: "Josefin Slab", serif;
+  color: #35635d;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 150, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+h2 i {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 156, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+h3 {
+  font-size: 1.5rem;
+  font-family: "Josefin Slab", serif;
+  color: #35635d;
+}
+
+/* line 162, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+textarea {
+  color: #35635d;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  padding: 1%;
+  outline: none;
+  border: 0.13rem solid #e7e5dc;
+  decoration: none;
+  border-radius: 0.3rem;
+}
+
+/* line 173, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+label {
+  font-family: "Raleway", sans-serif;
+  color: #35635d;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  font-weight: 300;
+}
+
+/* line 181, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c9c5b7;
+}
+
+/* line 186, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c9c5b7;
+}
+
+/* line 191, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c9c5b7;
+}
+
+/* line 196, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_common.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #c9c5b7;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.ui {
+  width: 266px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 50px;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.22px;
+  color: rgba(0, 0, 0, 0.6);
+  outline: none;
+  border-radius: 0.3rem;
+}
+/* line 14, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.ui:hover {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+/* line 18, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.ui .logo {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  vertical-align: top;
+}
+/* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.ui:disabled {
+  background: #EEEEEE;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.login-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #399ea7;
+}
+/* line 42, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.login-container .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fbfdf2;
+  border-right: 20px double #399ea7;
+  border-left: 20px double #399ea7;
+  height: 100vh;
+  width: 50vh;
+}
+/* line 52, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.login-container .login .bmirror {
+  margin-top: 20vh;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 661px) {
+  /* line 42, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+  .login-container .login {
+    width: 70vh;
+  }
+}
+
+/* line 62, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 66, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_login.scss */
+.angular-google-map-container {
+  height: 400px;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+nav {
+  z-index: 1;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 4, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .content-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 4, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .content-container {
+    float: right;
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+/* line 18, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.signout {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+@media screen and (min-width: 320px) {
+  /* line 18, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .signout {
+    width: 100%;
+    border-bottom: 0.13rem solid #e7e5dc;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 18, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .signout {
+    width: 250px;
+    height: 53px;
+    border-right: 0.13rem solid #e7e5dc;
+    border-bottom: none;
+  }
+}
+/* line 37, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.signout span {
+  text-align: center;
+  width: 50%;
+}
+@media screen and (min-width: 661px) {
+  /* line 39, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .signout span:hover {
+    font-size: 1.25rem;
+  }
+}
+/* line 45, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.signout span a {
+  padding-left: 5px;
+}
+
+/* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.left-aside {
+  z-index: 1;
+}
+@media screen and (min-width: 320px) {
+  /* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside {
+    display: none;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside {
+    background: white;
+    padding-top: 40px;
+    height: 100vh;
+    width: 250px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-right: 0.13rem solid #e7e5dc;
+    border-top: 0.13rem solid #e7e5dc;
+  }
+  /* line 69, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .logo-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+  /* line 73, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .logo-container .bmirror {
+    height: 75px;
+    width: 75px;
+  }
+  /* line 78, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-container {
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+  }
+  /* line 83, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-container i {
+    color: #399ea7;
+  }
+  /* line 85, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-container i:first-child {
+    padding-right: 160px;
+  }
+  /* line 88, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-container i:last-child {
+    padding-left: 160px;
+  }
+  /* line 93, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside i {
+    font-size: 1.5rem;
+  }
+}
+/* line 97, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.left-aside .moti-click {
+  padding: 5px;
+  border-top: 0.13rem solid #e7e5dc;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  /* line 97, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-click {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 97, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .left-aside .moti-click {
+    visibility: visible;
+  }
+}
+/* line 108, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.left-aside .moti-click i:hover {
+  cursor: pointer;
+}
+
+/* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.fixed-nav {
+  z-index: 3;
+}
+@media screen and (min-width: 320px) {
+  /* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav {
+    background: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    border-top: 0.13rem solid #e7e5dc;
+  }
+  /* line 117, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .web-navbar {
+    display: none;
+  }
+  /* line 120, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .bmirror {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    height: 45px;
+    width: 45px;
+  }
+  /* line 138, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .menu-click i {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    bottom: 0;
+    right: 48%;
+    height: 50px;
+  }
+  /* line 146, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .menu-click i:active {
+    margin-left: 87.5px;
+    bottom: 0;
+    right: 48%;
+  }
+  /* line 153, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .menu-click ul {
+    background: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    width: 100vw;
+    height: 140px;
+    bottom: 142px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 320px) and (min-width: 320px) {
+  /* line 163, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .menu-click ul li {
+    border-top: 0.13rem solid #e7e5dc;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 661px) {
+  /* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav {
+    border-top: none;
+  }
+  /* line 176, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .web-navbar {
+    display: flex;
+  }
+  /* line 179, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .menu-click {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 661px) {
+  /* line 184, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav {
+    border-bottom: 0.13rem solid #e7e5dc;
+    border-top: none;
+    height: 50px;
+    background: white;
+    top: 0;
+    left: 250px;
+  }
+  /* line 188, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav i {
+    display: none;
+  }
+  /* line 191, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .bmirror {
+    display: none;
+  }
+  /* line 194, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav .text-opt {
+    display: none;
+  }
+  /* line 199, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav ul {
+    margin-right: 30%;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* line 206, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav ul li {
+    height: 100%;
+    width: 25%;
+    padding-top: 18px;
+    text-align: center;
+  }
+  /* line 211, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  .fixed-nav ul li:hover {
+    font-size: 1.25rem;
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 221, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  div.ui-helper-hidden-accessible div {
+    display: none;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 221, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+  div.ui-helper-hidden-accessible div {
+    display: none;
+  }
+}
+
+/* line 229, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_navbar.scss */
+.ui-tooltip-content {
+  font-size: 10pt;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes {
+  display: flex;
+  padding-top: 15%;
+}
+@media screen and (min-width: 320px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes {
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 520px;
+  }
+}
+/* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes div {
+  background: #399ea7;
+  display: flex;
+  margin: 3px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div {
+    width: 150px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div {
+    margin: 5px;
+    width: 290px;
+    height: 250px;
+  }
+}
+/* line 35, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes div a {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 35, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div a {
+    width: 140px;
+    height: 152px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 35, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div a {
+    height: 230px;
+    width: 270px;
+  }
+}
+/* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes div a span {
+  font-family: "Josefin Slab", serif;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div a span {
+    width: 75%;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes div a span {
+    width: 60%;
+    font-size: 1.8rem;
+  }
+}
+/* line 65, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes .four,
+.shapes .one {
+  border-top-left-radius: 9.7rem;
+  border-bottom-right-radius: 9.7rem;
+}
+/* line 67, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes .four a,
+.shapes .one a {
+  border: 15px double white;
+  border-top-left-radius: 9rem;
+  border-bottom-right-radius: 9rem;
+}
+@media screen and (min-width: 320px) {
+  /* line 67, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes .four a,
+  .shapes .one a {
+    border: 3px solid white;
+    border-top-left-radius: 5.7rem;
+    border-bottom-right-radius: 5.7rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 65, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes .four,
+  .shapes .one {
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+  }
+}
+/* line 85, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes .three,
+.shapes .two {
+  border-top-right-radius: 9.7rem;
+  border-bottom-left-radius: 9.7rem;
+}
+/* line 87, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+.shapes .three a,
+.shapes .two a {
+  border: 15px double white;
+  border-top-right-radius: 9rem;
+  border-bottom-left-radius: 9rem;
+}
+@media screen and (min-width: 320px) {
+  /* line 87, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes .three a,
+  .shapes .two a {
+    border: 3px solid white;
+    border-top-right-radius: 5.7rem;
+    border-bottom-left-radius: 5.7rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 85, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_user-profile.scss */
+  .shapes .three,
+  .shapes .two {
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+  }
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.container-mood {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+/* line 11, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container button {
+  width: inherit;
+}
+/* line 15, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container h2 {
+  color: #35635d;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+/* line 22, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 30, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container form button.customize-link {
+  width: 262px;
+}
+/* line 34, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.update-mood-container form input.button {
+  align-self: center;
+}
+
+/* line 41, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.mood-updated h2 {
+  font-size: 23px;
+}
+/* line 45, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.mood-updated a {
+  font-size: 17px;
+  color: #df7236;
+}
+
+/* line 51, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.select_style {
+  background: #FFF;
+  overflow: hidden;
+  color: #525252;
+  font-weight: 300;
+  -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  border: solid 1px #DADADA;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  cursor: pointer;
+  padding-right: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 71, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.select_style span {
+  position: absolute;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background: url("http://projects.authenticstyle.co.uk/niceselect/arrow.png") no-repeat;
+  top: 50%;
+  margin-top: -4px;
+}
+
+/* line 81, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-input.scss */
+.select_style select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120%;
+  background: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 10px;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-update.scss */
+.mood-updated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* line 7, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-update.scss */
+.mood-updated a {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 320px) {
+  /* line 11, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-update.scss */
+  .mood-updated h2 {
+    display: inline;
+  }
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 7, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.row .line {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* line 14, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results ul li {
+  font-size: 15px;
+  line-height: 1.4rem;
+  margin-bottom: 15px;
+  border-bottom: 0.13rem solid #e7e5dc;
+  padding-bottom: 13px;
+}
+/* line 21, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results ul li .list-colored {
+  color: #df7236;
+}
+/* line 25, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results ul li a.result-website {
+  text-decoration: underline;
+  color: #2e7a81;
+  word-wrap: break-word;
+}
+
+/* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.result-rating {
+  display: table;
+}
+
+/* line 37, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.result-name a {
+  font-size: 22px;
+  font-family: "Josefin Slab", serif;
+  color: #399ea7;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 44, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .map-container {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    padding-bottom: 430px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 44, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .map-container {
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 137px;
+    padding-bottom: 270px;
+  }
+}
+
+/* line 60, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* line 67, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results ul {
+  border-top: 0.13rem solid #e7e5dc;
+  padding-top: 13px;
+}
+@media screen and (min-width: 320px) {
+  /* line 67, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .map-results ul {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 67, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .map-results ul {
+    width: 100%;
+  }
+}
+/* line 78, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.map-results h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 1.8em;
+}
+
+/* line 86, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.list-styled .list-colored a {
+  color: #df7236;
+}
+/* line 90, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.list-styled .list-underlined a {
+  text-decoration: underline;
+  color: #2e7a81;
+}
+
+/* line 96, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+.loading {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 15px solid #399ea7;
+  border-top-color: #35635d;
+  animation: spin 1s infinite linear;
+  margin: -40px 0 0 -40px;
+}
+@media screen and (min-width: 320px) {
+  /* line 96, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .loading {
+    left: 55%;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 96, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_map.scss */
+  .loading {
+    left: 60%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.chart-headline {
+  text-align: center;
+}
+
+/* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.chart-container {
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .chart-container {
+    width: 400px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .chart-container {
+    width: 800px;
+  }
+}
+
+/* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.day-param {
+  display: flex;
+}
+/* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.day-param a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .day-param {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .day-param {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.error {
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-wrapper {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 12, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-wrapper h2 {
+  padding-bottom: 10px;
+}
+/* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-wrapper a {
+  padding-bottom: 10px;
+}
+
+/* line 21, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list ul {
+  width: 300px;
+  display: inline-block;
+  color: #97a0af;
+  margin-top: 10px;
+}
+/* line 27, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list ul li {
+  display: flex;
+  margin-bottom: 5px;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+/* line 36, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list ul li .checkbox {
+  width: 7%;
+}
+/* line 40, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list ul li span {
+  width: 80%;
+}
+
+/* line 46, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+span.med-true {
+  text-decoration: line-through;
+}
+
+/* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list input[type="text"] {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/* line 58, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list form input {
+  width: 287px;
+}
+
+/* line 64, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 69, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.other-todos {
+  padding: 5px;
+  width: 300px;
+  border-radius: 0.3rem;
+  background: rgba(251, 253, 242, 0.8);
+  border: 0.13rem solid #e7e5dc;
+}
+/* line 76, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.other-todos ul li {
+  padding-bottom: 10px;
+}
+
+/* line 81, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.cite {
+  padding-bottom: 10px;
+}
+/* line 84, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.cite span {
+  font-size: 11px;
+}
+/* line 87, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.cite a {
+  color: #df7236;
+}
+
+/* line 92, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.feat-todo div i {
+  font-size: 10px;
+  padding-right: 8px;
+}
+
+/* line 97, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.feat-todo div {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 102, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+span.todo-true {
+  text-decoration: line-through;
+}
+
+/* line 107, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_to-do.scss */
+.todo-list form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.chart-headline {
+  text-align: center;
+}
+
+/* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.chart-container {
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .chart-container {
+    width: 400px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .chart-container {
+    width: 800px;
+  }
+}
+
+/* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.day-param {
+  display: flex;
+}
+/* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+.day-param a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .day-param {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_chart.scss */
+  .day-param {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.editable {
+  background: #EAEAEA;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .mobile-less {
+    position: fixed;
+    top: 52px;
+    left: 3px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 5, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .mobile-less {
+    display: none;
+  }
+}
+
+/* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.tag-container {
+  padding: 2px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 43px;
+  background: white;
+  border-bottom: 0.13rem solid #e7e5dc;
+}
+/* line 17, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.tag-container input {
+  height: 30px;
+}
+@media screen and (min-width: 320px) {
+  /* line 17, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .tag-container input {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 17, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .tag-container input {
+    width: 50%;
+  }
+}
+/* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.tag-container label {
+  display: none;
+}
+@media screen and (min-width: 320px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .tag-container {
+    width: 100%;
+    top: 500px;
+    height: 43px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .tag-container {
+    top: 150px;
+    width: 250px;
+    border-left: 0.13rem solid #e7e5dc;
+  }
+}
+
+/* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.arrows {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  background: white;
+}
+@media screen and (min-width: 320px) {
+  /* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .arrows {
+    width: 100%;
+    top: 470px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .arrows {
+    border-left: 0.13rem solid #e7e5dc;
+    padding: 5px;
+    height: 43px;
+    width: 250px;
+    top: 110px;
+  }
+}
+/* line 70, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.arrows i {
+  font-size: 2rem;
+}
+
+/* line 74, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.data-id {
+  display: none;
+}
+
+/* line 77, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-past {
+  z-index: 2;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 77, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .web-past {
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    overflow-y: scroll;
+    height: 250px;
+    width: 100%;
+    padding-top: 120px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 77, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .web-past {
+    padding-top: 100px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    width: 250px;
+    float: right;
+    position: relative;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* line 104, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-past h2 {
+  position: fixed;
+  height: 75px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 104, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .web-past h2 {
+    border-top: 0.13rem solid #e7e5dc;
+    width: 100%;
+    bottom: 250px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 104, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .web-past h2 {
+    border-top: none;
+    border-left: 0.13rem solid #e7e5dc;
+    width: 250px;
+    right: 0;
+    height: 65px;
+    top: 50px;
+  }
+}
+/* line 126, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-past .web-list {
+  height: 100%;
+  width: 250px;
+}
+@media screen and (min-width: 320px) {
+  /* line 126, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .web-past .web-list {
+    width: 100%;
+  }
+}
+/* line 132, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-past .web-list ul {
+  overflow-y: scroll;
+  border-left: 0.13rem solid #e7e5dc;
+}
+/* line 136, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-past .web-list ul li {
+  height: 60px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: white;
+  border-bottom: 0.13rem solid #e7e5dc;
+  padding: 10px;
+}
+
+/* line 147, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-entries div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 151, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.web-entries div i {
+  font-size: 1.3rem;
+  padding-left: 6px;
+}
+
+/* line 156, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.entry {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+/* line 161, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.title {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  z-index: 7;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 167, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 167, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container {
+    display: inline-block;
+    height: calc(100% - 50px);
+    width: calc(100vw - 500px);
+  }
+}
+/* line 184, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.journal-container h2 {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 50%;);
+}
+/* line 190, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.journal-container h2 i {
+  padding-left: 5px;
+}
+@media screen and (min-width: 320px) {
+  /* line 194, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry {
+    background: white;
+    border: 0.13rem solid #e7e5dc;
+    border-radius: 0.3rem;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 5px;
+  }
+  /* line 208, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry #edit-title {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 0.13rem solid #e7e5dc;
+  }
+  /* line 213, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry #edit-text {
+    border-top: 0.13rem solid #e7e5dc;
+    padding-top: 10px;
+  }
+  /* line 217, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry #edit-tags {
+    border-top: 0.13rem solid #e7e5dc;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #399ea7;
+    position: relative;
+    padding: 10px;
+    margin-top: calc(100% - 20px);
+  }
+  /* line 226, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry #edit-tags span {
+    font-family: "Josefin Slab", serif;
+    font-size: 1.3rem;
+  }
+  /* line 231, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry .journal-time {
+    width: 300px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  /* line 236, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry .journal-buttons {
+    border-top: 0.13rem solid #e7e5dc;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 194, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .journal-container .view-entry {
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 252, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 260, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+  }
+  /* line 268, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-input-container {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+  }
+  /* line 274, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-title {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 279, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-entry {
+    height: 300px;
+  }
+  /* line 283, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-tag {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 291, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container {
+    display: flex;
+    width: calc(100vw - 500px);
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 296, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form {
+    width: calc(100vw - 735px);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+  }
+  /* line 303, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 307, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-title {
+    width: 400px;
+    margin: 0;
+  }
+  /* line 311, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-entry {
+    width: 400px;
+    height: 300px;
+  }
+  /* line 315, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+  .add-journal-container .journal-form .journal-tag {
+    width: 400px;
+    margin: 0;
+  }
+}
+/* line 323, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.edit-entry {
+  display: flex;
+  align-items: center;
+}
+/* line 326, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.edit-entry img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* line 330, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.edit-entry i {
+  font-size: 1rem;
+  padding-left: 6px;
+}
+
+/* line 335, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_journals.scss */
+.view-entry-item {
+  white-space: pre-wrap;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calbutton-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 320px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calbutton-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calbutton-container {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 17, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 17, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar {
+    height: 700px;
+  }
+}
+
+/* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calendar-events {
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar-events {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar-events {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 36, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .span8 {
+    width: 322px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 36, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .span8 {
+    width: 800px;
+  }
+}
+
+/* line 45, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+/* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.form-container form {
+  margin: 0 auto;
+}
+/* line 53, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.form-container form input[type=date] {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+/* line 58, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.form-container form input[type=text] {
+  font-family: "Raleway", sans-serif;
+  width: 200px;
+  padding: 5.7px;
+}
+@media screen and (min-width: 320px) {
+  /* line 64, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form label {
+    font-size: 18px;
+  }
+  /* line 68, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form .col-sm-10 {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 50, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form {
+    display: flex;
+    align-items: baseline;
+  }
+  /* line 76, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form .pull-right {
+    width: 200px;
+    height: 38px;
+  }
+  /* line 81, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form label {
+    margin-right: 5px;
+    font-size: 20px;
+    border: none;
+  }
+  /* line 87, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form button.btn.btn-primary.pull-right {
+    font-size: 13px;
+  }
+  /* line 91, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form .col-sm-10 {
+    margin-right: 20px;
+  }
+  /* line 94, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form .col-sm-10 button[type=submit] {
+    font-size: 0;
+    padding: 11px;
+  }
+  /* line 99, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .form-container form .col-sm-10 input {
+    padding: 5px;
+    width: initial;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 108, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 108, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-toolbar {
+    text-align: center;
+    margin-bottom: 1em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 120, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-left {
+    float: right;
+    width: 100%;
+    display: inline-grid;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 120, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-left {
+    float: none;
+    width: inherit;
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 133, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-right {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 133, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-right {
+    display: block;
+    width: inherit;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 142, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-right button.fc-today-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 142, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-right button.fc-today-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 152, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-button-group {
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 152, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  div.fc-button-group {
+    width: inherit;
+  }
+}
+
+/*** Calendar + FullCalendar Overrides ***/
+/* line 164, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-day-grid-event .fc-content {
+  word-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+/* line 169, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-event {
+  border: 1px solid #35635d !important;
+  background-color: #fbfdf2 !important;
+}
+
+/* line 174, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calXBtn {
+  float: right;
+  margin-top: -5px;
+  margin-right: -5px;
+}
+
+/* line 180, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calWell {
+  background: white;
+}
+@media screen and (min-width: 320px) {
+  /* line 180, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calWell {
+    margin: 40px;
+    float: none;
+    height: 372px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 180, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calWell {
+    float: left;
+    margin: 10px;
+  }
+}
+
+/* line 193, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+tr, td {
+  background: white;
+}
+
+/* line 197, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-unthemed .fc-today {
+  background: white !important;
+}
+
+/* line 201, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-view, .fc-view > table {
+  z-index: 0 !important;
+}
+
+/* line 205, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+  border-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* line 209, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-event.openSesame {
+  background-color: #e5e50b;
+  color: black;
+}
+
+/* line 214, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.fc-event.customFeed {
+  background-color: #84deaf;
+  color: black;
+}
+
+/* line 219, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calTools {
+  margin-bottom: 10px;
+}
+
+/* line 223, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 227, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.btn-group button {
+  width: 164px;
+}
+
+/* line 232, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+.calendar .fc-toolbar .fc-left {
+  float: none;
+}
+@media screen and (min-width: 320px) {
+  /* line 232, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar .fc-toolbar .fc-left {
+    display: inline-grid;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 232, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+  .calendar .fc-toolbar .fc-left {
+    display: inline-block;
+  }
+}
+
+/* line 242, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+div button.fc-today-button {
+  width: 161px !important;
+  margin-right: 5px !important;
+}
+
+/* line 247, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+div.fc .fc-toolbar > * > * {
+  margin-left: 0 !important;
+}
+
+/* line 251, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+div button.fc-prev-button {
+  width: 161px !important;
+  margin-right: 5px !important;
+}
+
+/* line 256, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+div.fc .fc-button-group > * {
+  margin: 0;
+}
+
+/* line 260, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_calendar.scss */
+div button.fc-next-button {
+  margin-right: 2px !important;
+  width: 158px;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.medication-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.medication-wrapper {
+  border-top: 0.13rem solid #e7e5dc;
+  border-bottom: 0.13rem solid #e7e5dc;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #35635d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 19, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.medication-wrapper h2 {
+  padding-bottom: 10px;
+}
+/* line 23, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.medication-wrapper span {
+  padding-bottom: 5px;
+}
+
+/* line 28, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-name {
+  color: #fbfdf2;
+  font-size: 1px;
+}
+
+/* line 33, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list {
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  /* line 33, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 33, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* line 46, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list ul.med-nav {
+  color: #97a0af;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  /* line 46, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list ul.med-nav {
+    width: inerhit;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 46, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list ul.med-nav {
+    padding-left: 60px;
+    width: 406px;
+  }
+}
+/* line 60, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list ul.med-nav li {
+  display: flex;
+  align-items: baseline;
+}
+/* line 64, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list ul.med-nav li input {
+  display: inline-block;
+}
+/* line 68, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list ul.med-nav li .checkbox {
+  width: 7%;
+}
+/* line 72, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list ul.med-nav li span {
+  padding-left: 5px;
+}
+/* line 78, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-list form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 320px) {
+  /* line 84, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list form input {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 84, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-list form input {
+    width: 68%;
+  }
+}
+
+/* line 96, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.med-buttons button:nth-child(2) {
+  background: #bd7556;
+}
+@media screen and (min-width: 320px) {
+  /* line 95, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 95, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  .med-buttons {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+/* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+button.took-meds {
+  width: 211px;
+  background: #399ea7;
+}
+@media screen and (min-width: 320px) {
+  /* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  button.took-meds {
+    padding-bottom: 7px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 114, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+  button.took-meds {
+    padding-bottom: 10px;
+  }
+}
+
+/* line 125, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_medicine-input.scss */
+.form-container {
+  padding-top: 20px;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 8, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container {
+  display: flex;
+}
+/* line 11, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .smile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 130px;
+}
+/* line 18, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .smile-container i {
+  height: 33.9%;
+  border-right: 0.13rem solid #e7e5dc;
+  font-size: 3rem;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 26, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .smile-container i:nth-child(2) {
+  justify-content: center;
+}
+/* line 30, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .smile-container i:last-child {
+  justify-content: flex-end;
+}
+/* line 36, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .row-list {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+/* line 42, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .row-list .cust-move i {
+  color: #399ea7;
+  padding-right: 5px;
+}
+/* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .row-list .cust-delete i {
+  color: #bd7556;
+  font-size: 2.2rem;
+}
+/* line 56, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .remove-row {
+  cursor: pointer;
+  display: inline-table;
+}
+/* line 59, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container .remove-row span {
+  cursor: move;
+}
+/* line 65, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container input#value.custom-mood {
+  width: 25%;
+}
+/* line 69, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.customize-container button {
+  margin-left: 5px;
+}
+
+/* line 74, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_mood-customize.scss */
+.cust-note {
+  padding: 10px 10px 10px 25px;
+  width: 240px;
+}
+
+/* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 7, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline .phone-service a {
+  color: #df7236;
+}
+/* line 12, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline i.fa.fa-circle-o {
+  padding-right: 5px;
+}
+/* line 16, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline .helpline-info {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.13rem solid #e7e5dc;
+}
+/* line 24, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline .helpline-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 29, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline .helpline-title h3 {
+  font-size: 1.5rem;
+  height: 100%;
+}
+/* line 35, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline ul {
+  margin-top: 20px;
+  border-top: 0.13rem solid #e7e5dc;
+  width: 75%;
+}
+/* line 40, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline ul li {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 41, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline ul li h3 {
+  color: #399ea7;
+  text-align: center;
+  padding-top: 5px;
+}
+/* line 51, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline ul li .services-avail {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 58, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_helpline.scss */
+.helpline ul li span i {
+  font-size: 1.2rem;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-container {
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 1, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-container {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 14, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-container {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 14, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-container {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 23, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .mobile-sms {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 23, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .mobile-sms {
+    visibility: hidden;
+  }
+}
+
+/* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.sms-popup {
+  padding: 5px;
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.77);
+  border: 0.13rem solid #e7e5dc;
+}
+/* line 38, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.sms-popup form div {
+  padding-bottom: 18px;
+}
+@media screen and (min-width: 320px) {
+  /* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-popup {
+    width: 319px;
+  }
+}
+@media screen and (min-width: 661px) {
+  /* line 32, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  .sms-popup {
+    width: 368px;
+  }
+}
+
+/* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+a.text-opt {
+  position: fixed;
+  right: 15px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  /* line 49, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+  a.text-opt {
+    font-size: 1.5rem;
+  }
+}
+/* line 60, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+a.text-opt i {
+  padding-left: 11px;
+}
+
+/* line 65, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.opt-in {
+  text-align: center;
+}
+
+/* line 77, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.smsForm button {
+  padding: 6px;
+}
+
+/* line 81, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.smsForm label {
+  font-size: 15px;
+}
+
+/* line 85, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+form.smsForm label i {
+  color: #bc2c2c;
+  font-size: 8px;
+}
+
+/* line 90, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+input#phonenum {
+  margin: 0;
+  padding: 3px;
+}
+
+/* line 95, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.smsForm div span {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.5em;
+}
+
+/* line 100, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.frequency {
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+/* line 105, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.provider {
+  display: block;
+}
+
+/* line 109, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.receiving-message {
+  padding-bottom: 13px;
+  font-family: "Josefin Slab", serif;
+}
+/* line 113, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+.receiving-message span.reminder {
+  color: #bd7556;
+}
+
+/* line 118, /Users/Amiee/Documents/Clones/Week-9/Blue-Mirror/app/assets/stylesheets/partials/_sms.scss */
+a.desktop-sms {
+  font-size: 1.5rem;
+}
+/*!
+ * FullCalendar v2.7.3 Stylesheet
+ * Docs & License: http://fullcalendar.io/
+ * (c) 2016 Adam Shaw
+ */
+
+
+
+.fc {
+	direction: ltr;
+	text-align: left;
+}
+
+.fc-rtl {
+	text-align: right;
+}
+
+body .fc { /* extra precedence to overcome jqui */
+	font-size: 1em;
+}
+
+
+/* Colors
+--------------------------------------------------------------------------------------------------*/
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content, /* for gutter border */
+.fc-unthemed .fc-popover {
+	border-color: #ddd;
+}
+
+.fc-unthemed .fc-popover {
+	background-color: #fff;
+}
+
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-popover .fc-header {
+	background: #eee;
+}
+
+.fc-unthemed .fc-popover .fc-header .fc-close {
+	color: #666;
+}
+
+.fc-unthemed .fc-today {
+	background: #fcf8e3;
+}
+
+.fc-highlight { /* when user is selecting cells */
+	background: #bce8f1;
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+}
+
+.fc-bgevent { /* default look for background events */
+	background: rgb(143, 223, 130);
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+}
+
+.fc-nonbusiness { /* default look for non-business-hours areas */
+	/* will inherit .fc-bgevent's styles */
+	background: #d7d7d7;
+}
+
+
+/* Icons (inline elements with styled text that mock arrow icons)
+--------------------------------------------------------------------------------------------------*/
+
+.fc-icon {
+	display: inline-block;
+	height: 1em;
+	line-height: 1em;
+	font-size: 1em;
+	text-align: center;
+	overflow: hidden;
+	font-family: "Courier New", Courier, monospace;
+
+	/* don't allow browser text-selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+
+/*
+Acceptable font-family overrides for individual icons:
+	"Arial", sans-serif
+	"Times New Roman", serif
+
+NOTE: use percentage font sizes or else old IE chokes
+*/
+
+.fc-icon:after {
+	position: relative;
+}
+
+.fc-icon-left-single-arrow:after {
+	content: "\02039";
+	font-weight: bold;
+	font-size: 200%;
+	top: -7%;
+}
+
+.fc-icon-right-single-arrow:after {
+	content: "\0203A";
+	font-weight: bold;
+	font-size: 200%;
+	top: -7%;
+}
+
+.fc-icon-left-double-arrow:after {
+	content: "\000AB";
+	font-size: 160%;
+	top: -7%;
+}
+
+.fc-icon-right-double-arrow:after {
+	content: "\000BB";
+	font-size: 160%;
+	top: -7%;
+}
+
+.fc-icon-left-triangle:after {
+	content: "\25C4";
+	font-size: 125%;
+	top: 3%;
+}
+
+.fc-icon-right-triangle:after {
+	content: "\25BA";
+	font-size: 125%;
+	top: 3%;
+}
+
+.fc-icon-down-triangle:after {
+	content: "\25BC";
+	font-size: 125%;
+	top: 2%;
+}
+
+.fc-icon-x:after {
+	content: "\000D7";
+	font-size: 200%;
+	top: 6%;
+}
+
+
+/* Buttons (styled <button> tags, normalized to work cross-browser)
+--------------------------------------------------------------------------------------------------*/
+
+.fc button {
+	/* force height to include the border and padding */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* dimensions */
+	margin: 0;
+	height: 2.1em;
+	padding: 0 .6em;
+
+	/* text & cursor */
+	font-size: 1em; /* normalize */
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+/* Firefox has an annoying inner border */
+.fc button::-moz-focus-inner { margin: 0; padding: 0; }
+	
+.fc-state-default { /* non-theme */
+	border: 1px solid;
+}
+
+.fc-state-default.fc-corner-left { /* non-theme */
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.fc-state-default.fc-corner-right { /* non-theme */
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+/* icons in buttons */
+
+.fc button .fc-icon { /* non-theme */
+	position: relative;
+	top: -0.05em; /* seems to be a good adjustment across browsers */
+	margin: 0 .2em;
+	vertical-align: middle;
+}
+	
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+.fc-state-default {
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+	color: #333333;
+	background-color: #e6e6e6;
+}
+
+.fc-state-hover {
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+	     -o-transition: background-position 0.1s linear;
+	        transition: background-position 0.1s linear;
+}
+
+.fc-state-down,
+.fc-state-active {
+	background-color: #cccccc;
+	background-image: none;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fc-state-disabled {
+	cursor: default;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+}
+
+
+/* Buttons Groups
+--------------------------------------------------------------------------------------------------*/
+
+.fc-button-group {
+	display: inline-block;
+}
+
+/*
+every button that is not first in a button group should scootch over one pixel and cover the
+previous button's border...
+*/
+
+.fc .fc-button-group > * { /* extra precedence b/c buttons have margin set to zero */
+	float: left;
+	margin: 0 0 0 -1px;
+}
+
+.fc .fc-button-group > :first-child { /* same */
+	margin-left: 0;
+}
+
+
+/* Popover
+--------------------------------------------------------------------------------------------------*/
+
+.fc-popover {
+	position: absolute;
+	box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+.fc-popover .fc-header { /* TODO: be more consistent with fc-head/fc-body */
+	padding: 2px 4px;
+}
+
+.fc-popover .fc-header .fc-title {
+	margin: 0 2px;
+}
+
+.fc-popover .fc-header .fc-close {
+	cursor: pointer;
+}
+
+.fc-ltr .fc-popover .fc-header .fc-title,
+.fc-rtl .fc-popover .fc-header .fc-close {
+	float: left;
+}
+
+.fc-rtl .fc-popover .fc-header .fc-title,
+.fc-ltr .fc-popover .fc-header .fc-close {
+	float: right;
+}
+
+/* unthemed */
+
+.fc-unthemed .fc-popover {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.fc-unthemed .fc-popover .fc-header .fc-close {
+	font-size: .9em;
+	margin-top: 2px;
+}
+
+/* jqui themed */
+
+.fc-popover > .ui-widget-header + .ui-widget-content {
+	border-top: 0; /* where they meet, let the header have the border */
+}
+
+
+/* Misc Reusable Components
+--------------------------------------------------------------------------------------------------*/
+
+.fc-divider {
+	border-style: solid;
+	border-width: 1px;
+}
+
+hr.fc-divider {
+	height: 0;
+	margin: 0;
+	padding: 0 0 2px; /* height is unreliable across browsers, so use padding */
+	border-width: 1px 0;
+}
+
+.fc-clear {
+	clear: both;
+}
+
+.fc-bg,
+.fc-bgevent-skeleton,
+.fc-highlight-skeleton,
+.fc-helper-skeleton {
+	/* these element should always cling to top-left/right corners */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.fc-bg {
+	bottom: 0; /* strech bg to bottom edge */
+}
+
+.fc-bg table {
+	height: 100%; /* strech bg to bottom edge */
+}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------*/
+
+.fc table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1em; /* normalize cross-browser */
+}
+
+.fc th {
+	text-align: center;
+}
+
+.fc th,
+.fc td {
+	border-style: solid;
+	border-width: 1px;
+	padding: 0;
+	vertical-align: top;
+}
+
+.fc td.fc-today {
+	border-style: double; /* overcome neighboring borders */
+}
+
+
+/* Fake Table Rows
+--------------------------------------------------------------------------------------------------*/
+
+.fc .fc-row { /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
+	/* no visible border by default. but make available if need be (scrollbar width compensation) */
+	border-style: solid;
+	border-width: 0;
+}
+
+.fc-row table {
+	/* don't put left/right border on anything within a fake row.
+	   the outer tbody will worry about this */
+	border-left: 0 hidden transparent;
+	border-right: 0 hidden transparent;
+
+	/* no bottom borders on rows */
+	border-bottom: 0 hidden transparent; 
+}
+
+.fc-row:first-child table {
+	border-top: 0 hidden transparent; /* no top border on first row */
+}
+
+
+/* Day Row (used within the header and the DayGrid)
+--------------------------------------------------------------------------------------------------*/
+
+.fc-row {
+	position: relative;
+}
+
+.fc-row .fc-bg {
+	z-index: 1;
+}
+
+/* highlighting cells & background event skeleton */
+
+.fc-row .fc-bgevent-skeleton,
+.fc-row .fc-highlight-skeleton {
+	bottom: 0; /* stretch skeleton to bottom of row */
+}
+
+.fc-row .fc-bgevent-skeleton table,
+.fc-row .fc-highlight-skeleton table {
+	height: 100%; /* stretch skeleton to bottom of row */
+}
+
+.fc-row .fc-highlight-skeleton td,
+.fc-row .fc-bgevent-skeleton td {
+	border-color: transparent;
+}
+
+.fc-row .fc-bgevent-skeleton {
+	z-index: 2;
+
+}
+
+.fc-row .fc-highlight-skeleton {
+	z-index: 3;
+}
+
+/*
+row content (which contains day/week numbers and events) as well as "helper" (which contains
+temporary rendered events).
+*/
+
+.fc-row .fc-content-skeleton {
+	position: relative;
+	z-index: 4;
+	padding-bottom: 2px; /* matches the space above the events */
+}
+
+.fc-row .fc-helper-skeleton {
+	z-index: 5;
+}
+
+.fc-row .fc-content-skeleton td,
+.fc-row .fc-helper-skeleton td {
+	/* see-through to the background below */
+	background: none; /* in case <td>s are globally styled */
+	border-color: transparent;
+
+	/* don't put a border between events and/or the day number */
+	border-bottom: 0;
+}
+
+.fc-row .fc-content-skeleton tbody td, /* cells with events inside (so NOT the day number cell) */
+.fc-row .fc-helper-skeleton tbody td {
+	/* don't put a border between event cells */
+	border-top: 0;
+}
+
+
+/* Scrolling Container
+--------------------------------------------------------------------------------------------------*/
+
+.fc-scroller {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* TODO: move to agenda/basic */
+.fc-scroller > .fc-day-grid,
+.fc-scroller > .fc-time-grid {
+	position: relative; /* re-scope all positions */
+	width: 100%; /* hack to force re-sizing this inner element when scrollbars appear/disappear */
+}
+
+
+/* Global Event Styles
+--------------------------------------------------------------------------------------------------*/
+
+.fc-event {
+	position: relative; /* for resize handle and other inner positioning */
+	display: block; /* make the <a> tag block */
+	font-size: .85em;
+	line-height: 1.3;
+	border-radius: 3px;
+	border: 1px solid #3a87ad; /* default BORDER color */
+	background-color: #3a87ad; /* default BACKGROUND color */
+	font-weight: normal; /* undo jqui's ui-widget-header bold */
+}
+
+/* overpower some of bootstrap's and jqui's styles on <a> tags */
+.fc-event,
+.fc-event:hover,
+.ui-widget .fc-event {
+	color: #fff; /* default TEXT color */
+	text-decoration: none; /* if <a> has an href */
+}
+
+.fc-event[href],
+.fc-event.fc-draggable {
+	cursor: pointer; /* give events with links and draggable events a hand mouse pointer */
+}
+
+.fc-not-allowed, /* causes a "warning" cursor. applied on body */
+.fc-not-allowed .fc-event { /* to override an event's custom cursor */
+	cursor: not-allowed;
+}
+
+.fc-event .fc-bg { /* the generic .fc-bg already does position */
+	z-index: 1;
+	background: #fff;
+	opacity: .25;
+	filter: alpha(opacity=25); /* for IE */
+}
+
+.fc-event .fc-content {
+	position: relative;
+	z-index: 2;
+}
+
+/* resizer (cursor AND touch devices) */
+
+.fc-event .fc-resizer {
+	position: absolute;
+	z-index: 4;
+}
+
+/* resizer (touch devices) */
+
+.fc-event .fc-resizer {
+	display: none;
+}
+
+.fc-event.fc-allow-mouse-resize .fc-resizer,
+.fc-event.fc-selected .fc-resizer {
+	/* only show when hovering or selected (with touch) */
+	display: block;
+}
+
+/* hit area */
+
+.fc-event.fc-selected .fc-resizer:before {
+	/* 40x40 touch area */
+	content: "";
+	position: absolute;
+	z-index: 9999; /* user of this util can scope within a lower z-index */
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+
+/* Event Selection (only for touch devices)
+--------------------------------------------------------------------------------------------------*/
+
+.fc-event.fc-selected {
+	z-index: 9999 !important; /* overcomes inline z-index */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fc-event.fc-selected.fc-dragging {
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Horizontal Events
+--------------------------------------------------------------------------------------------------*/
+
+/* bigger touch area when selected */
+.fc-h-event.fc-selected:before {
+	content: "";
+	position: absolute;
+	z-index: 3; /* below resizers */
+	top: -10px;
+	bottom: -10px;
+	left: 0;
+	right: 0;
+}
+
+/* events that are continuing to/from another week. kill rounded corners and butt up against edge */
+
+.fc-ltr .fc-h-event.fc-not-start,
+.fc-rtl .fc-h-event.fc-not-end {
+	margin-left: 0;
+	border-left-width: 0;
+	padding-left: 1px; /* replace the border with padding */
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.fc-ltr .fc-h-event.fc-not-end,
+.fc-rtl .fc-h-event.fc-not-start {
+	margin-right: 0;
+	border-right-width: 0;
+	padding-right: 1px; /* replace the border with padding */
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* resizer (cursor AND touch devices) */
+
+/* left resizer  */
+.fc-ltr .fc-h-event .fc-start-resizer,
+.fc-rtl .fc-h-event .fc-end-resizer {
+	cursor: w-resize;
+	left: -1px; /* overcome border */
+}
+
+/* right resizer */
+.fc-ltr .fc-h-event .fc-end-resizer,
+.fc-rtl .fc-h-event .fc-start-resizer {
+	cursor: e-resize;
+	right: -1px; /* overcome border */
+}
+
+/* resizer (mouse devices) */
+
+.fc-h-event.fc-allow-mouse-resize .fc-resizer {
+	width: 7px;
+	top: -1px; /* overcome top border */
+	bottom: -1px; /* overcome bottom border */
+}
+
+/* resizer (touch devices) */
+
+.fc-h-event.fc-selected .fc-resizer {
+	/* 8x8 little dot */
+	border-radius: 4px;
+	border-width: 1px;
+	width: 6px;
+	height: 6px;
+	border-style: solid;
+	border-color: inherit;
+	background: #fff;
+	/* vertically center */
+	top: 50%;
+	margin-top: -4px;
+}
+
+/* left resizer  */
+.fc-ltr .fc-h-event.fc-selected .fc-start-resizer,
+.fc-rtl .fc-h-event.fc-selected .fc-end-resizer {
+	margin-left: -4px; /* centers the 8x8 dot on the left edge */
+}
+
+/* right resizer */
+.fc-ltr .fc-h-event.fc-selected .fc-end-resizer,
+.fc-rtl .fc-h-event.fc-selected .fc-start-resizer {
+	margin-right: -4px; /* centers the 8x8 dot on the right edge */
+}
+
+
+/* DayGrid events
+----------------------------------------------------------------------------------------------------
+We use the full "fc-day-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+
+.fc-day-grid-event {
+	margin: 1px 2px 0; /* spacing between events and edges */
+	padding: 0 1px;
+}
+
+.fc-day-grid-event.fc-selected:after {
+	content: "";
+	position: absolute;
+	z-index: 1; /* same z-index as fc-bg, behind text */
+	/* overcome the borders */
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	left: -1px;
+	/* darkening effect */
+	background: #000;
+	opacity: .25;
+	filter: alpha(opacity=25); /* for IE */
+}
+
+.fc-day-grid-event .fc-content { /* force events to be one-line tall */
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.fc-day-grid-event .fc-time {
+	font-weight: bold;
+}
+
+/* resizer (cursor devices) */
+
+/* left resizer  */
+.fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer,
+.fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer {
+	margin-left: -2px; /* to the day cell's edge */
+}
+
+/* right resizer */
+.fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer,
+.fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer {
+	margin-right: -2px; /* to the day cell's edge */
+}
+
+
+/* Event Limiting
+--------------------------------------------------------------------------------------------------*/
+
+/* "more" link that represents hidden events */
+
+a.fc-more {
+	margin: 1px 3px;
+	font-size: .85em;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.fc-more:hover {
+	text-decoration: underline;
+}
+
+.fc-limited { /* rows and cells that are hidden because of a "more" link */
+	display: none;
+}
+
+/* popover that appears when "more" link is clicked */
+
+.fc-day-grid .fc-row {
+	z-index: 1; /* make the "more" popover one higher than this */
+}
+
+.fc-more-popover {
+	z-index: 2;
+	width: 220px;
+}
+
+.fc-more-popover .fc-event-container {
+	padding: 10px;
+}
+
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+
+.fc-now-indicator {
+	position: absolute;
+	border: 0 solid red;
+}
+
+
+/* Utilities
+--------------------------------------------------------------------------------------------------*/
+
+.fc-unselectable {
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Toolbar
+--------------------------------------------------------------------------------------------------*/
+
+.fc-toolbar {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.fc-toolbar .fc-left {
+	float: left;
+}
+
+.fc-toolbar .fc-right {
+	float: right;
+}
+
+.fc-toolbar .fc-center {
+	display: inline-block;
+}
+
+/* the things within each left/right/center section */
+.fc .fc-toolbar > * > * { /* extra precedence to override button border margins */
+	float: left;
+	margin-left: .75em;
+}
+
+/* the first thing within each left/center/right section */
+.fc .fc-toolbar > * > :first-child { /* extra precedence to override button border margins */
+	margin-left: 0;
+}
+	
+/* title text */
+
+.fc-toolbar h2 {
+	margin: 0;
+}
+
+/* button layering (for border precedence) */
+
+.fc-toolbar button {
+	position: relative;
+}
+
+.fc-toolbar .fc-state-hover,
+.fc-toolbar .ui-state-hover {
+	z-index: 2;
+}
+	
+.fc-toolbar .fc-state-down {
+	z-index: 3;
+}
+
+.fc-toolbar .fc-state-active,
+.fc-toolbar .ui-state-active {
+	z-index: 4;
+}
+
+.fc-toolbar button:focus {
+	z-index: 5;
+}
+
+
+/* View Structure
+--------------------------------------------------------------------------------------------------*/
+
+/* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
+/* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
+.fc-view-container *,
+.fc-view-container *:before,
+.fc-view-container *:after {
+	-webkit-box-sizing: content-box;
+	   -moz-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+
+.fc-view, /* scope positioning and z-index's for everything within the view */
+.fc-view > table { /* so dragged elements can be above the view's main element */
+	position: relative;
+	z-index: 1;
+}
+
+/* BasicView
+--------------------------------------------------------------------------------------------------*/
+
+/* day row structure */
+
+.fc-basicWeek-view .fc-content-skeleton,
+.fc-basicDay-view .fc-content-skeleton {
+	/* we are sure there are no day numbers in these views, so... */
+	padding-top: 1px; /* add a pixel to make sure there are 2px padding above events */
+	padding-bottom: 1em; /* ensure a space at bottom of cell for user selecting/clicking */
+}
+
+.fc-basic-view .fc-body .fc-row {
+	min-height: 4em; /* ensure that all rows are at least this tall */
+}
+
+/* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
+
+.fc-row.fc-rigid {
+	overflow: hidden;
+}
+
+.fc-row.fc-rigid .fc-content-skeleton {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* week and day number styling */
+
+.fc-basic-view .fc-week-number,
+.fc-basic-view .fc-day-number {
+	padding: 0 2px;
+}
+
+.fc-basic-view td.fc-week-number span,
+.fc-basic-view td.fc-day-number {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.fc-basic-view .fc-week-number {
+	text-align: center;
+}
+
+.fc-basic-view .fc-week-number span {
+	/* work around the way we do column resizing and ensure a minimum width */
+	display: inline-block;
+	min-width: 1.25em;
+}
+
+.fc-ltr .fc-basic-view .fc-day-number {
+	text-align: right;
+}
+
+.fc-rtl .fc-basic-view .fc-day-number {
+	text-align: left;
+}
+
+.fc-day-number.fc-other-month {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+}
+
+/* AgendaView all-day area
+--------------------------------------------------------------------------------------------------*/
+
+.fc-agenda-view .fc-day-grid {
+	position: relative;
+	z-index: 2; /* so the "more.." popover will be over the time grid */
+}
+
+.fc-agenda-view .fc-day-grid .fc-row {
+	min-height: 3em; /* all-day section will never get shorter than this */
+}
+
+.fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
+	padding-top: 1px; /* add a pixel to make sure there are 2px padding above events */
+	padding-bottom: 1em; /* give space underneath events for clicking/selecting days */
+}
+
+
+/* TimeGrid axis running down the side (for both the all-day area and the slot area)
+--------------------------------------------------------------------------------------------------*/
+
+.fc .fc-axis { /* .fc to overcome default cell styles */
+	vertical-align: middle;
+	padding: 0 4px;
+	white-space: nowrap;
+}
+
+.fc-ltr .fc-axis {
+	text-align: right;
+}
+
+.fc-rtl .fc-axis {
+	text-align: left;
+}
+
+.ui-widget td.fc-axis {
+	font-weight: normal; /* overcome jqui theme making it bold */
+}
+
+
+/* TimeGrid Structure
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid-container, /* so scroll container's z-index is below all-day */
+.fc-time-grid { /* so slats/bg/content/etc positions get scoped within here */
+	position: relative;
+	z-index: 1;
+}
+
+.fc-time-grid {
+	min-height: 100%; /* so if height setting is 'auto', .fc-bg stretches to fill height */
+}
+
+.fc-time-grid table { /* don't put outer borders on slats/bg/content/etc */
+	border: 0 hidden transparent;
+}
+
+.fc-time-grid > .fc-bg {
+	z-index: 1;
+}
+
+.fc-time-grid .fc-slats,
+.fc-time-grid > hr { /* the <hr> AgendaView injects when grid is shorter than scroller */
+	position: relative;
+	z-index: 2;
+}
+
+.fc-time-grid .fc-content-col {
+	position: relative; /* because now-indicator lives directly inside */
+}
+
+.fc-time-grid .fc-content-skeleton {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* divs within a cell within the fc-content-skeleton */
+
+.fc-time-grid .fc-business-container {
+	position: relative;
+	z-index: 1;
+}
+
+.fc-time-grid .fc-bgevent-container {
+	position: relative;
+	z-index: 2;
+}
+
+.fc-time-grid .fc-highlight-container {
+	position: relative;
+	z-index: 3;
+}
+
+.fc-time-grid .fc-event-container {
+	position: relative;
+	z-index: 4;
+}
+
+.fc-time-grid .fc-now-indicator-line {
+	z-index: 5;
+}
+
+.fc-time-grid .fc-helper-container { /* also is fc-event-container */
+	position: relative;
+	z-index: 6;
+}
+
+
+/* TimeGrid Slats (lines that run horizontally)
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-slats td {
+	height: 1.5em;
+	border-bottom: 0; /* each cell is responsible for its top border */
+}
+
+.fc-time-grid .fc-slats .fc-minor td {
+	border-top-style: dotted;
+}
+
+.fc-time-grid .fc-slats .ui-widget-content { /* for jqui theme */
+	background: none; /* see through to fc-bg */
+}
+
+
+/* TimeGrid Highlighting Slots
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-highlight-container { /* a div within a cell within the fc-highlight-skeleton */
+	position: relative; /* scopes the left/right of the fc-highlight to be in the column */
+}
+
+.fc-time-grid .fc-highlight {
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* top and bottom will be in by JS */
+}
+
+
+/* TimeGrid Event Containment
+--------------------------------------------------------------------------------------------------*/
+
+.fc-ltr .fc-time-grid .fc-event-container { /* space on the sides of events for LTR (default) */
+	margin: 0 2.5% 0 2px;
+}
+
+.fc-rtl .fc-time-grid .fc-event-container { /* space on the sides of events for RTL */
+	margin: 0 2px 0 2.5%;
+}
+
+.fc-time-grid .fc-event,
+.fc-time-grid .fc-bgevent {
+	position: absolute;
+	z-index: 1; /* scope inner z-index's */
+}
+
+.fc-time-grid .fc-bgevent {
+	/* background events always span full width */
+	left: 0;
+	right: 0;
+}
+
+
+/* Generic Vertical Event
+--------------------------------------------------------------------------------------------------*/
+
+.fc-v-event.fc-not-start { /* events that are continuing from another day */
+	/* replace space made by the top border with padding */
+	border-top-width: 0;
+	padding-top: 1px;
+
+	/* remove top rounded corners */
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.fc-v-event.fc-not-end {
+	/* replace space made by the top border with padding */
+	border-bottom-width: 0;
+	padding-bottom: 1px;
+
+	/* remove bottom rounded corners */
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+/* TimeGrid Event Styling
+----------------------------------------------------------------------------------------------------
+We use the full "fc-time-grid-event" class instead of using descendants because the event won't
+be a descendant of the grid when it is being dragged.
+*/
+
+.fc-time-grid-event {
+	overflow: hidden; /* don't let the bg flow over rounded corners */
+}
+
+.fc-time-grid-event.fc-selected {
+	/* need to allow touch resizers to extend outside event's bounding box */
+	/* common fc-selected styles hide the fc-bg, so don't need this anyway */
+	overflow: visible;
+}
+
+.fc-time-grid-event.fc-selected .fc-bg {
+	display: none; /* hide semi-white background, to appear darker */
+}
+
+.fc-time-grid-event .fc-content {
+	overflow: hidden; /* for when .fc-selected */
+}
+
+.fc-time-grid-event .fc-time,
+.fc-time-grid-event .fc-title {
+	padding: 0 1px;
+}
+
+.fc-time-grid-event .fc-time {
+	font-size: .85em;
+	white-space: nowrap;
+}
+
+/* short mode, where time and title are on the same line */
+
+.fc-time-grid-event.fc-short .fc-content {
+	/* don't wrap to second line (now that contents will be inline) */
+	white-space: nowrap;
+}
+
+.fc-time-grid-event.fc-short .fc-time,
+.fc-time-grid-event.fc-short .fc-title {
+	/* put the time and title on the same line */
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fc-time-grid-event.fc-short .fc-time span {
+	display: none; /* don't display the full time text... */
+}
+
+.fc-time-grid-event.fc-short .fc-time:before {
+	content: attr(data-start); /* ...instead, display only the start time */
+}
+
+.fc-time-grid-event.fc-short .fc-time:after {
+	content: "\000A0-\000A0"; /* seperate with a dash, wrapped in nbsp's */
+}
+
+.fc-time-grid-event.fc-short .fc-title {
+	font-size: .85em; /* make the title text the same size as the time */
+	padding: 0; /* undo padding from above */
+}
+
+/* resizer (cursor device) */
+
+.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 8px;
+	overflow: hidden;
+	line-height: 8px;
+	font-size: 11px;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+}
+
+.fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after {
+	content: "=";
+}
+
+/* resizer (touch device) */
+
+.fc-time-grid-event.fc-selected .fc-resizer {
+	/* 10x10 dot */
+	border-radius: 5px;
+	border-width: 1px;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-color: inherit;
+	background: #fff;
+	/* horizontally center */
+	left: 50%;
+	margin-left: -5px;
+	/* center on the bottom edge */
+	bottom: -5px;
+}
+
+
+/* Now Indicator
+--------------------------------------------------------------------------------------------------*/
+
+.fc-time-grid .fc-now-indicator-line {
+	border-top-width: 1px;
+	left: 0;
+	right: 0;
+}
+
+/* arrow on axis */
+
+.fc-time-grid .fc-now-indicator-arrow {
+	margin-top: -5px; /* vertically center on top coordinate */
+}
+
+.fc-ltr .fc-time-grid .fc-now-indicator-arrow {
+	left: 0;
+	/* triangle pointing right... */
+	border-width: 5px 0 5px 6px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.fc-rtl .fc-time-grid .fc-now-indicator-arrow {
+	right: 0;
+	/* triangle pointing left... */
+	border-width: 5px 6px 5px 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+/* Include this file in your html if you are using the CSP mode. */
+
+
+.ng-animate.item:not(.left):not(.right) {
+  -webkit-transition: 0s ease-in-out left;
+  transition: 0s ease-in-out left
+}
+.uib-datepicker .uib-title {
+  width: 100%;
+}
+
+.uib-day button, .uib-month button, .uib-year button {
+  min-width: 100%;
+}
+
+.uib-left, .uib-right {
+  width: 100%
+}
+
+.uib-position-measure {
+  display: block !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.uib-position-scrollbar-measure {
+  position: absolute !important;
+  top: -9999px !important;
+  width: 50px !important;
+  height: 50px !important;
+  overflow: scroll !important;
+}
+
+.uib-position-body-scrollbar-measure {
+  overflow: scroll !important;
+}
+.uib-datepicker-popup.dropdown-menu {
+  display: block;
+  float: none;
+  margin: 0;
+}
+
+.uib-button-bar {
+  padding: 10px 9px 2px;
+}
+
+[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,
+[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,
+[uib-popover-popup].popover.top-left > .arrow,
+[uib-popover-popup].popover.top-right > .arrow,
+[uib-popover-popup].popover.bottom-left > .arrow,
+[uib-popover-popup].popover.bottom-right > .arrow,
+[uib-popover-popup].popover.left-top > .arrow,
+[uib-popover-popup].popover.left-bottom > .arrow,
+[uib-popover-popup].popover.right-top > .arrow,
+[uib-popover-popup].popover.right-bottom > .arrow,
+[uib-popover-html-popup].popover.top-left > .arrow,
+[uib-popover-html-popup].popover.top-right > .arrow,
+[uib-popover-html-popup].popover.bottom-left > .arrow,
+[uib-popover-html-popup].popover.bottom-right > .arrow,
+[uib-popover-html-popup].popover.left-top > .arrow,
+[uib-popover-html-popup].popover.left-bottom > .arrow,
+[uib-popover-html-popup].popover.right-top > .arrow,
+[uib-popover-html-popup].popover.right-bottom > .arrow,
+[uib-popover-template-popup].popover.top-left > .arrow,
+[uib-popover-template-popup].popover.top-right > .arrow,
+[uib-popover-template-popup].popover.bottom-left > .arrow,
+[uib-popover-template-popup].popover.bottom-right > .arrow,
+[uib-popover-template-popup].popover.left-top > .arrow,
+[uib-popover-template-popup].popover.left-bottom > .arrow,
+[uib-popover-template-popup].popover.right-top > .arrow,
+[uib-popover-template-popup].popover.right-bottom > .arrow {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  margin: 0;
+}
+
+[uib-popover-popup].popover,
+[uib-popover-html-popup].popover,
+[uib-popover-template-popup].popover {
+  display: block !important;
+}
+
+.uib-time input {
+  width: 50px;
+}
+
+[uib-typeahead-popup].dropdown-menu {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ @import "bourbon";
+
+
+
+ */

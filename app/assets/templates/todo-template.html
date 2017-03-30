@@ -1,0 +1,28 @@
+<div class="container" ng-controller="TodoController as todo">
+    <div class="todo-wrapper">
+        <h2 class="total-items">Doables</h2>
+        <a ng-click="othersTodos(); show=true" ng-hide="show">View other doable tasks...</a>
+        <div class="other-todos" ng-show="show">
+            <ul>
+                <li class="feat-todo" ng-repeat="featTodo in randomArray">
+                    <div><i class="fa fa-circle-thin" aria-hidden="true"></i> {{featTodo}}</div>
+                </li>
+                <div class="cite"><span>Some <cite>tasks</cite> yanked from <a href="http://bit.ly/1Cewmd1">Eponis Sinope</a> and modified for our purposes</span></div>
+            </ul>
+            <a ng-click="clearOthers();show=false">close <i class="fa fa-times" aria-hidden="true"></i></a></div>
+        <div class="todo-list">
+            <ul class="nav">
+                <li ng-repeat="todo in todos">
+                    <input class="checkbox" type="checkbox" ng-model="todo.done" />
+                    <span class="todo-{{todo.done}} todo">{{todo.todo}}</span>
+                </li>
+            </ul>
+            <form ng-submit="postTodos()">
+                <input type="text" maxlength="30" Placeholder="Enter Task" maxlength="100" ng-model="input" />
+                <p class="error">{{error}}</p>
+                <button type="submit" class="button" ng-submit="postTodos()"> Add New Task</button>
+                <button type="button" class="button remove" ng-click="deleteTodos()">Remove Selected</button>
+            </form>
+        </div>
+    </div>
+</div>

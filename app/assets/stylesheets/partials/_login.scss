@@ -1,0 +1,68 @@
+.ui {
+    width: 266px;
+    margin: 5px;
+    background: rgba(#FFF, .3);
+    height: 50px;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.22px;
+    color: rgba(0,0,0,0.6);
+    outline: none;
+    border-radius: $radius;
+
+    &:hover {
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    }
+
+    .logo {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        vertical-align: top;
+    }
+
+    &:disabled {
+        background: #EEEEEE;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    }
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: $mainColor;
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $accentCream;
+        border-right: 20px double $mainColor;
+        border-left: 20px double $mainColor;
+        height: 100vh;
+        width: 50vh;
+
+        .bmirror {
+            margin-top: 20vh;
+            margin-bottom: 10px;
+        }
+        @include bp (small) {
+            width: 70vh;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.angular-google-map-container {
+    height: 400px;
+}

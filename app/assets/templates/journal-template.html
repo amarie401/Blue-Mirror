@@ -1,0 +1,59 @@
+<div ng-controller="JournalController as entries">
+    <span class="mobile-less"><i ng-click="less=true" ng-show="!less" class="fa fa-times" aria-hidden="true">
+View Less Posts</i>
+
+<i ng-click="less=false" ng-show="less" class="fa fa-plus" aria-hidden="true">View More Posts</i> </span>
+    <div class="web-past" ng-show="!less">
+        <h2>Past Entries</h2>
+        <div class="arrows">
+            <a ng-click="nextPage()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+            <a ng-click="prevPage()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></i></a>
+        </div>
+        <form class="tag-container">
+            <label for="tag-search">Search Tags</label>
+            <input id="tag-search"></input>
+            <a ng-click="searchTags(); activeEntry=false"> <i class="fa fa-search" aria-hidden="true"></i>Search Tags
+            </a>
+        </form>
+        <div class="web-list">
+            <ul>
+                <li class="web-entries" ng-repeat="entry in journalsArray" ng-class="{active: viewEntry === {{entry.id}}}" ng-click="makeActive(entry, entry.id)">
+
+                    <div ng-hide="edit">
+                        <h3 class="entry">{{entry.title}} <i class="fa fa-pencil" aria-hidden="true"></i></h3>
+                        <input class="data-id" data-id="{{entry.id}}">
+                        </input>
+                        <span class="entry">{{entry.day}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="journal-container">
+        <h2 class="title">Journal</h2>
+        <div class="add-journal-container">
+            <form name="journalForm" class="journal-form" ng-hide="past || activeEntry">
+                <div class="journal-input-container"><label>Title</label><input type="text" class="journal-title" ng-model="title" maxlength="20" placeholder="your title"></div>
+                <div class="journal-input-container"><label>Journal Entry</label><textarea class="journal-entry" type="text" ng-model="text" placeholder="start typing!">
+    </textarea></div>
+                <div class="journal-input-container"><label>Tags</label><input type="text" class="journal-tag" ng-model="tags" placeholder="tags here"></div>
+                <p class="error">{{error}}
+                </p>
+                <a class="button" name="submit journal" ng-click="postJournals()">submit</a>
+            </form>
+            <div id="active-entry" ng-repeat="entry in viewEntryArray" class="view-entry" ng-show="activeEntry">
+                <ul>
+                    <h3 id="edit-title" class="entry" ng-model="title">{{entry.title}}</h3>
+                    <li class="journal-time">{{entry.time}} on {{entry.day}}</li>
+                    <li id="edit-text" class="view-entry-item" ng-model="text">{{entry.text}}</li>
+                    <li id="edit-tags"><span>Tags: </span>{{entry.tags}}</li>
+                </ul>
+                <div class="journal-buttons" ng-hide="edit">
+                    <a id="edit-click" class="edit-entry" ng-click="editJournal(entry); edit=true">edit entry</a>
+                    <a class="delete-journals" ng-click="deleteJournalEntry(entry)">delete</a>
+                </div>
+                <button ng-hide="!edit" class="submit-entry" type="submit" ng-click="edit=false; patchJournalText(entry)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="customize-flex">
+    <h2>Customize Moods</h2>
+    <div class="customize-container">
+        <div class="smile-container">
+            <i class="fa fa-frown-o" aria-hidden="true"></i>
+            <i class="fa fa-meh-o" aria-hidden="true"></i>
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </div>
+        <form ng-submit="save($event)">
+
+            <div>
+                <ul ui-sortable="{axis:'y', containment: 'parent'}" ng-model="list">
+                    <li class="row-list" ng-repeat="row in list">
+                        <input type="text" class="form-control" ng-model="row.text" maxlength="20" /><span ng-click="del(row)" class="remove-row">
+                      <span class="cust-move"><i class="fa fa-arrows-v" aria-hidden="true"></i></span><span class="cust-delete"><i class="fa fa-times-circle" aria-hidden="true"></i></span></span>
+                    </li>
+                    <input ng-class="{'disableButton': isDisabled()}" ng-disabled="isDisabled()" type="button" class="btn btn-primary" ng-click="list.push({})" value="Add Row" />
+                </ul>
+                <button class="btn btn-default">Submit</button>
+            </div>
+        </form>
+        <br>
+        <pre ng-show="isShow">list={{list}}</pre>
+    </div>
+    <span class="cust-note">*Altering moods will reflect on your mood chart</span>
+</div>

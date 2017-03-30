@@ -1,0 +1,20 @@
+{
+  "name": "Blue-Mirror",
+  "homepage": "https://github.com/adamcreed/Blue-Mirror",
+  "authors": [
+    "katherine-hill <katherinehill1991@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-chart.js": "^1.1.1"
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BlueMirrorApp">
+
+    <head>
+        <title>Blue Mirror</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Depression, Anxiety, Coping">
+        <meta name="author" content="Adam Reed, Amineta Lo, Katherine Hill">
+        <link rel="stylesheet" href='font-awesome-4.7.0/css/font-awesome.min.css'>
+    </head>
+
+    <body>
+        <div ng-show="currentUser" class="signout">
+            <span>
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a href="signout">sign out</a>
+            </span>
+        </div>
+        <div ng-cloak class="all-container">
+            <div class="left-aside" ng-show="currentUser">
+                <span class="logo-container"><img class="bmirror" src="images/betalogo.png"/>
+                    <span>Blue Mirror</span>
+                </span>
+
+                <span class="moti-container">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <span ng-repeat="quote in currentMotivation track by $index">
+                        {{quote}}
+                    </span>
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </span>
+            </span>
+            <a class='moti-click'>
+                <i title="Click to view more motivational quotes" class="fa fa-smile-o" aria-hidden="true" ng-click="motivationalOther()"></i>
+            </a>
+        </div>
+
+        <nav ng-cloak ng-controller="ProfileController as profile" ng-show="currentUser" class="fixed-nav">
+
+            <a ng-click="show=!show" class="text-opt">SMS <i class="fa fa-mobile" aria-hidden="true"></i></a>
+            <div class="sms-container mobile-sms">
+
+                <div class="sms-popup" ng-show="show">
+                    <div class="receiving-message" ng-show="optedIn()">
+                        <span>You are currently receiving
+                            <span class="reminder">{{currentFrequency}}</span>
+                            messages</span>
+                    </div>
+                    <form name="smsForm" ng-hide="optedIn()" class="smsForm" ng-submit="submitSms()">
+                        <div class="opt-in">
+                            <span>Opt in to recieve SMS messages<br/></span>
+                        </div>
+                        <label for="phonenum">Phone Number (10 digits)
+                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        </label>
+                        <div><input ng-model="num" name="number" ng-click="submitCarriers()" id="phonenum" type="tel" pattern="^(\D*\d){10}\D*$" placeholder="Number (required)" required></div>
+
+                        <label class="provider" for="provider">Carrier
+                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        </label>
+                        <select name="phonecarrier" ng-change="currentCarrier" ng-model="smsCarrier" ng-options="carrier[1] as carrier[0] for carrier in phoneCarriers" id="provider" required>
+                            <option value=''>Carrier (required)
+                            </option>
+                        </select><br/>
+
+                        <div class="frequency">
+                            <label for="frequency">How Often Would You Like to Recieve SMS?
+                                <i class="fa fa-asterisk" aria-hidden="true"></i>
+                            </label>
+                            <select name="frequency" ng-change="currentFrequency" ng-model="smsFrequency" id="frequency" required>
+                                <option value=''>Frequency (required)
+                                </option>
+                                <option value='Daily'>Daily</option>
+                                <option value='Weekly'>Weekly</option>
+                                <option value='Reminder'>On 3 Day Abscence</option>
+                            </select>
+                        </div>
+                        <button ng-hide="optedIn()" ng-class="{'disableButton': smsFormValid()}" type="submit" ng-disabled="smsFormValid()">Opt In</button>
+                    </form>
+                    <button ng-show="optedIn()" ng-click="deleteSms()">Opt Out</button>
+                </div>
+            </div>
+            <span class="menu-click">
+                <a class="mobile-nav-click">
+                    <i ng-click="shownav=true" ng-show="!shownav" class="fa fa-bars" aria-hidden="true"></i>
+                    <i ng-click="shownav=false" ng-show="shownav" class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <ul ng-show="shownav" class="mobile-nav-list">
+                    <li ng-click="shownav=false">
+                        <a ui-sref="BlueParent.profile">Home</a>
+                    </li>
+                    <li ng-click="shownav=false">
+                        <a ui-sref="BlueParent.meds">Meds</a>
+                    </li>
+                    <li ng-click="shownav=false">
+                        <a ui-sref="BlueParent.mood">Mood Chart</a>
+                    </li>
+                    <li ng-click="shownav=false">
+                        <a ui-sref="BlueParent.journal">Journal</a>
+                    </li>
+                </ul>
+                <img class="bmirror" src="images/betalogo.png"/>
+            </span>
+            <ul class="web-navbar">
+                <li>
+                    <a ui-sref="BlueParent.profile">Home</a>
+                </li>
+                <li>
+                    <a ui-sref="BlueParent.meds">Meds</a>
+                </li>
+                <li>
+                    <a ui-sref="BlueParent.mood">Mood Chart</a>
+                </li>
+                <li>
+                    <a ui-sref="BlueParent.journal">Journal</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content-container">
+            <ui-view></ui-view>
+        </div>
+    </div>
+</body>
+
+</html>

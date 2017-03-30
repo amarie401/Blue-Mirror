@@ -1,0 +1,127 @@
+.medication-container {
+    display: flex;
+    justify-content: center;
+}
+
+.medication-wrapper {
+    border-top: $border;
+    border-bottom: $border;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $darkAccentTeal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h2 {
+        padding-bottom: 10px;
+    }
+
+    span {
+        padding-bottom: 5px;
+    }
+}
+
+.med-name {
+    color: $accentCream;
+    font-size: 1px;
+}
+
+.med-list {
+    margin: 0 auto;
+    @include bp(mobile) {
+        width: 65%;
+    }
+    @include bp(small) {
+        width: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.med-nav {
+        color: #97a0af;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        @include bp(mobile) {
+            width: inerhit;
+        }
+        @include bp(small) {
+            padding-left: 60px;
+            width: 406px;
+        }
+
+        li {
+            display: flex;
+            align-items: baseline;
+
+            input {
+                display: inline-block;
+            }
+
+            .checkbox {
+                width: 7%;
+            }
+
+            span {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+
+        input {
+            @include bp(mobile) {
+                width: 95%;
+            }
+            @include bp(small) {
+                width: 68%;
+            }
+        }
+    }
+}
+
+.med-buttons {
+    button:nth-child(2) {
+        background: $accentDullRed;
+    }
+    @include bp(mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    @include bp(small) {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+button.took-meds {
+    width: 211px;
+    background: $mainColor;
+    @include bp(mobile) {
+        padding-bottom: 7px;
+    }
+    @include bp(small) {
+        padding-bottom: 10px;
+    }
+}
+
+.form-container {
+    padding-top: 20px;
+}
