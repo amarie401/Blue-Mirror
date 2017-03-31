@@ -10,6 +10,14 @@ A coping tool for those with depression and anxiety. This Angular-Rails web appl
 - [Amineta Lo (Fontend)](https://github.com/amarie401)
 - [Katherine Hill (Frontend)](https://github.com/katherine-hill)
 
+## To Do:
+
+- Fix bug with journal not displaying correctly for some mac users
+- Refactor code where applicable
+- Add a feature for searching local health centers by zip code
+- Add a feature that correlates when you started taking a medicaiton and how it may have been affecting your mood
+- Convert to a full blown mobile app
+
 
 View Our App on Heroku: https://blue-mirror.herokuapp.com/#!/login
 
