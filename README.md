@@ -20,6 +20,7 @@ A coping tool for those with depression and anxiety. This Angular-Rails web appl
 
 
 View Our App on Heroku: https://blue-mirror.herokuapp.com/#!/login
+View Our App on Youtube: https://youtu.be/R5sTteLP7pU
 
 Follow us on Twitter: https://twitter.com/BlueMirrorApp
 
